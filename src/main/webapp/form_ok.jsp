@@ -45,12 +45,16 @@
     Option:
     <%
         String[] hobbies = request.getParameterValues("option");
-        for(int i = 0 ; i < hobbies.length ; i++){
-            if(i== (hobbies.length-1)){
-                out.println(hobbies[i]);
-            }
-            else {
-                out.println(hobbies[i] + ", ");
+        if(hobbies==null){
+            out.println("");
+        }
+        else {
+            for (int i = 0; i < hobbies.length; i++) {
+                if (i == (hobbies.length - 1)) {
+                    out.println(hobbies[i]);
+                } else {
+                    out.println(hobbies[i] + ", ");
+                }
             }
         }
     %><br/>

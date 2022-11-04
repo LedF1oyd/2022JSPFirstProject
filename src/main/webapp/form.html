@@ -11,10 +11,19 @@
                 alert("차량명을 입력해주세요");
                 return false;
             }
+            else if (document.forms["myForm"]["color"].value == "") {
+                alert("색깔을 입력해주세요");
+                return false;
+            }
             else if (document.forms["myForm"]["mileage"].value == "") {
                 alert("주행거리를 입력해주세요");
                 return false;
             }
+            else if (document.forms["myForm"]["price"].value == "") {
+                alert("가격을 입력해주세요");
+                return false;
+            }
+
 
             else
                 return true
