@@ -40,11 +40,31 @@
             <option value="한국GM">한국GM</option>
         </select>
     </div>
+    <div id="carTypeRadio">
+        <p>차종을 골라주세요</p>
+        <input type="radio" id="sedan" name="carType" value="Sedan">
+        <label for="sedan">세단</label><br>
+        <input type="radio" id="suv" name="carType" value="SUV">
+        <label for="suv">SUV</label><br>
+        <input type="radio" id="hatchBack" name="carType" value="Hatch-Back">
+        <label for="hatchBack">해치백</label><br>
+        <input type="radio" id="wagon" name="carType" value="Wagon">
+        <label for="hatchBack">웨건</label><br>
+        <input type="radio" id="coupe" name="carType" value="Coupe">
+        <label for="hatchBack">쿠페</label><br>
+
+    </div>
 
     <div id="nameInputText">
         <p>차량의 이름을 입력하여주세요. </p>    <!-- 차량명 입력, input text -->
         <label for="name">차량명:  </label>
         <input type="text" id="name" name="name">
+    </div>
+
+    <div id="colorInputText">
+        <p>차량의 색상을 입력하여주세요. </p>    <!-- 차량명 입력, input text -->
+        <label for="color">색상:  </label>
+        <input type="text" id="color" name="color">
     </div>
 
     <div id="manufacturedDay">
@@ -68,18 +88,25 @@
 
     <div id="optionCheck">
         <p>차량이 가지고 옵션이라면 모두 체크해주세요</p> <!-- 옵, input number -->
-        <input type="checkbox" id="led" name="option[]" value="LED 헤드램프" class="checkSelect">
+        <input type="checkbox" id="led" name="option" value="LED 헤드램프" class="checkSelect">
         <label for="led">LED 헤드램프</label><br>
-        <input type="checkbox" id="HID" name="option[]" value="HID 헤드램프" class="checkSelect">
+        <input type="checkbox" id="HID" name="option" value="HID 헤드램프" class="checkSelect">
         <label for="HID">HID 헤드램프</label><br>
-        <input type="checkbox" id="HUD" name="option[]" value="HUD(Head Up Display)" class="checkSelect">
+        <input type="checkbox" id="HUD" name="option" value="HUD(Head Up Display)" class="checkSelect">
         <label for="HUD">HUD(Head Up Display)</label><br>
-        <input type="checkbox" id="열선시트" name="option[]" value="열선시트" class="checkSelect">
+        <input type="checkbox" id="열선시트" name="option" value="열선시트" class="checkSelect">
         <label for="열선시트">열선시트</label><br>
-        <input type="checkbox" id="통풍시트" name="option[]" value="통풍시트" class="checkSelect">
+        <input type="checkbox" id="통풍시트" name="option" value="통풍시트" class="checkSelect">
         <label for="통풍시트">통풍시트</label><br>
-        <input type="checkbox" id="navigation" name="option[]" value="내비게이션" class="checkSelect">
+        <input type="checkbox" id="navigation" name="option" value="내비게이션" class="checkSelect">
         <label for="navigation">내비게이션</label><br>
+    </div>
+
+    <div id="priceInputNumber">
+        <p>판매 희망 가격을 입력하여주세요. </p>    <!-- 키로수 입력, input number -->
+        <label for="price">가격:  </label>
+        <input type="number" id="price" name="price">
+        <label for="price">원  </label>
     </div>
 
     <div id="descriptionTextArea">
